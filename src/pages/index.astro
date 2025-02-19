@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import GlobalStyles from "../components/GlobalStyles.astro";
 import Atributos from "../components/Atributos.astro";
 import Interior from "../components/Interior.astro";
 import Exterior from "../components/Exterior.astro";
@@ -11,7 +12,8 @@ import Especificaciones from "../components/Especificaciones.astro";
 ---
 
 <Layout title="GAC Emzoom R Style">
-  <main class="mx-auto max-w-lg xl:max-w-screen-xl px-4 poppins-regular">
+  <GlobalStyles />
+  <main class="mx-auto px-4 poppins-regular">
     <section
       class="grid grid-cols-7 my-8 xl:my-20 bg-[url('/img/fondo-cta-m.jpg')] xl:bg-[url('/img/fondo-cta.jpg')] bg-cover bg-no-repeat xl:aspect-[1440/500]"
     >
@@ -76,10 +78,6 @@ import Especificaciones from "../components/Especificaciones.astro";
     <Exterior />
 
     <ColoresExterior />
-
-    <Equipamiento />
-
-    <Seguridad />
 
     <Especificaciones />
 

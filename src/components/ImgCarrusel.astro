@@ -1,0 +1,10 @@
+---
+const { title, img } = Astro.props;
+---
+
+<h2 class="xl:hidden poppins-bold uppercase text-3xl mb-2">
+    {title}
+</h2>
+<div class="xl:col-span-3">
+    <img src={img} alt="foto" class="px-10 xl:px-0 z-10 relative" />
+</div>
