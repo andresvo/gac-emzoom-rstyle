@@ -6,6 +6,6 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind()],
-  // base: "/aion-y",
+  base: "/emzoom-rstyle",
   site: "https://www.gacmotor.cl/emzoom-rstyle/",
 });

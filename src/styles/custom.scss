@@ -1,64 +1,61 @@
 .custom-corner {
-  position: relative;
-  text-align: justify;
+    position: relative;
+    text-align: justify;
 
+    // Agregamos un ::before contenedor que tendrá las esquinas adicionales
+    &::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+    }
 
-  // Agregamos un ::before contenedor que tendrá las esquinas adicionales
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-  }
-
-  // Todas las esquinas
-  &::before,
-  &::after,
-  & .corner::before,
-  & .corner::after {
-    content: "";
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    background: url('/img/custom-corner.png') no-repeat center;
-    background-size: contain;
-  }
-
-
-
-  // Superior izquierda
-  &::before {
-    top: -10px;
-    left: -15px;
-  }
-
-  // Inferior derecha
-  &::after {
-    bottom: -10px;
-    right: -10px;
-    transform: rotate(180deg);
-  }
-
-  // Superior derecha
-  & .corner::before {
-    top: -10px;
-    right: -10px;
-    transform: rotate(90deg);
-  }
-
-  // Inferior izquierda
-  & .corner::after {
-    bottom: -10px;
-    left: -15px;
-    transform: rotate(-90deg);
-  }
-
-  @media (max-width: 767px) {
+    // Todas las esquinas
     &::before,
     &::after,
     & .corner::before,
     & .corner::after {
-      width: 8px;
-      height: 8px;
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background: url("/emzoom-rstyle/img/custom-corner.png") no-repeat center;
+        background-size: contain;
     }
-  }
+
+    // Superior izquierda
+    &::before {
+        top: -10px;
+        left: -15px;
+    }
+
+    // Inferior derecha
+    &::after {
+        bottom: -10px;
+        right: -10px;
+        transform: rotate(180deg);
+    }
+
+    // Superior derecha
+    & .corner::before {
+        top: -10px;
+        right: -10px;
+        transform: rotate(90deg);
+    }
+
+    // Inferior izquierda
+    & .corner::after {
+        bottom: -10px;
+        left: -15px;
+        transform: rotate(-90deg);
+    }
+
+    @media (max-width: 767px) {
+        &::before,
+        &::after,
+        & .corner::before,
+        & .corner::after {
+            width: 8px;
+            height: 8px;
+        }
+    }
 }
