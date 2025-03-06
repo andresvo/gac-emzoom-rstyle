@@ -4,17 +4,15 @@ import ImgCarrusel from "../components/ImgCarrusel.astro";
 
 const title = "EXTERIOR";
 
-const description_1 =
-  "Diseño que impone carácter: la versión R-Style destaca por sus" +
-  "llantas negras de 19'' y vibrantes acentos en naranja en los" +
-  "faldones, alerón, difusor y detalles exteriores, proyectando una" +
-  "imagen deportiva y audaz.";
+const description_1 = "Diseño que impone carácter: la versión R-Style destaca por sus" +
+"llantas negras de 19'' y vibrantes acentos en naranja en los" +
+"faldones, alerón, difusor y detalles exteriores, proyectando una" +
+"imagen deportiva y audaz.";
 
-const description_2 =
-  "El Emzoom R-Style lleva el diseño deportivo al siguiente nivel con" +
-  "manillas eléctricas ocultas, detalles en color naranjo y un" +
-  "imponente techo panorámico, resaltando su estilo innovador y" +
-  "aerodinámico.";
+const description_2 = "El Emzoom R-Style lleva el diseño deportivo al siguiente nivel con" +
+"manillas eléctricas ocultas, detalles en color naranjo y un" +
+"imponente techo panorámico, resaltando su estilo innovador y" +
+"aerodinámico.";
 
 const description_3 = "";
 ---
@@ -24,7 +22,7 @@ const description_3 = "";
   <div class="swiper-wrapper">
     <div class="swiper-slide">
       <section class="grid grid-cols-1 xl:grid-cols-7">
-        <ImgCarrusel title={title} img="/emzoom-rstyle/img/ext1.png" />
+        <ImgCarrusel title={title} img="/img/ext1.png" />
         <div class="xl:col-span-4 xl:flex xl:flex-col">
           <BoxWithBorder title={title} description={description_1} />
         </div>
@@ -32,7 +30,7 @@ const description_3 = "";
     </div>
     <div class="swiper-slide">
       <section class="grid grid-cols-1 xl:grid-cols-7">
-        <ImgCarrusel title={title} img="/emzoom-rstyle/img/ext2.png" />
+        <ImgCarrusel title={title} img="/img/ext2.png" />
         <div class="xl:col-span-4 xl:flex xl:flex-col">
           <BoxWithBorder title={title} description={description_2} />
         </div>

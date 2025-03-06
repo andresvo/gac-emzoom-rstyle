@@ -4,22 +4,19 @@ import ImgCarrusel from "../components/ImgCarrusel.astro";
 
 const title = "ATRIBUTOS";
 
-const description_1 =
-  "Un diseño deportivo y desafiante: carrocería con detalles en color" +
-  " naranjo, manillas eléctricas ocultas, parrilla delantera Flying Wing" +
-  " y llantas deportivas de 19”, que refuerzan su estilo más agresivo y" +
-  " dinámico.";
+const description_1 = "Un diseño deportivo y desafiante: carrocería con detalles en color" +
+" naranjo, manillas eléctricas ocultas, parrilla delantera Flying Wing" +
+" y llantas deportivas de 19”, que refuerzan su estilo más agresivo y" +
+" dinámico.";
 
-const description_2 =
-  "Motor 1.5 Turbo Intercooler de inyección directa, con transmisión" +
-  "automática de 7 velocidades y 174 HP, que ofrece aceleración rápida" +
-  "y un rendimiento deportivo.";
+const description_2 = "Motor 1.5 Turbo Intercooler de inyección directa, con transmisión" +
+"automática de 7 velocidades y 174 HP, que ofrece aceleración rápida" +
+"y un rendimiento deportivo.";
 
-const description_3 =
-  "Pantalla táctil de 10,25” con CarPlay inalámbrico, cargador" +
-  "inalámbrico, volante multifunción y el exclusivo Modo Sport+, que" +
-  "juntos ofrecen una experiencia de conducción más conectada y" +
-  "deportiva.";
+const description_3 = "Pantalla táctil de 10,25” con CarPlay inalámbrico, cargador" +
+"inalámbrico, volante multifunción y el exclusivo Modo Sport+, que" +
+"juntos ofrecen una experiencia de conducción más conectada y" +
+"deportiva."
 ---
 
 <!-- Swiper -->
@@ -27,15 +24,15 @@ const description_3 =
   <div class="swiper-wrapper">
     <div class="swiper-slide">
       <section class="grid grid-cols-1 xl:grid-cols-7">
-        <ImgCarrusel title={title} img="/emzoom-rstyle/img/atrib1.png" />
+        <ImgCarrusel title={title} img="/img/atrib1.png" />
         <div class="xl:col-span-4 xl:flex xl:flex-col">
-          <BoxWithBorder title={title} description={description_1} />
+            <BoxWithBorder title={title} description={description_1} />
         </div>
       </section>
     </div>
     <div class="swiper-slide">
       <section class="grid grid-cols-1 xl:grid-cols-7">
-        <ImgCarrusel title={title} img="/emzoom-rstyle/img/atrib2.png" />
+        <ImgCarrusel title={title} img="/img/atrib2.png" />
         <div class="xl:col-span-4 xl:flex xl:flex-col">
           <BoxWithBorder title={title} description={description_2} />
         </div>
@@ -43,7 +40,7 @@ const description_3 =
     </div>
     <div class="swiper-slide">
       <section class="grid grid-cols-1 xl:grid-cols-7">
-        <ImgCarrusel title={title} img="/emzoom-rstyle/img/atrib3.png" />
+        <ImgCarrusel title={title} img="/img/atrib3.png" />
         <div class="xl:col-span-4 xl:flex xl:flex-col">
           <BoxWithBorder title={title} description={description_3} />
         </div>
